@@ -9,46 +9,74 @@
 
     <body>
         <header>
-            <h1 id="title">Survey form</h1>
-            <p id="description">A survey form</p>
+            <h1 id="title">Survey for the best party in town</h1>
+            <p id="description">Are you ready?</p>
         </header>
 
         <article>
+
             <form id="survey-form" action="">
-                <label id="name-label" for="name">Name:</label>
-                <input id="name" name="name" type="text" placeholder="Enter your name">
+                <p class="block">Please complete this form:</p>
 
+                <div class="block">
+                    <label id="name-label" for="name">Name:</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name">
+                </div>
 
-                <label for="male-radio">Male</label>
-                <input type="radio" name="male-radio" value="male">
-                <label for="female-radio">Female</label>
-                <input type="radio" name="female-radio" value="female">
+                <div class="block">
+                    <label for="male-radio">Male</label>
+                    <input type="radio" name="male-radio" value="male">
+                    <label for="female-radio">Female</label>
+                    <input type="radio" name="female-radio" value="female">
+                </div>
 
-                <label id="email-label" for="email">Email:</label>
-                <input id="email" name="email" type="email" placeholder="Enter your email">
+                <div class="block">
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email">
+                </div>
+                
+                <div class="block">
+                    <label id="number-label" for="number">Age:</label>
+                    <input id="number" name="number" type="number" min="16" max="40" placeholder="Enter your number">
+                </div>
 
-                <label id="number-label" for="number">Age:</label>
-                <input id="number" name="number" type="number" min="16" max="40" placeholder="Enter your number">
+                <div class="block">
+                    <label for="dropdown">Favorite game:</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="1">Beer Pong</option>
+                        <option value="2">Ping Pong</option>
+                        <option value="3">Monopoly</option>
+                        <option value="4">Musical Chairs</option>
+                    </select>
+                </div>
 
-                <label for="dropdown">Choose a car:</label>
-                <select name="dropdown" id="dropdown">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                </select>
+                <div class="block" id="checkbox-block">
+                    <p>What would you like to drink?</p>
 
-                <label for="checkbox1">pick1</label>
-                <input type="checkbox" name="checkbox1" value="1">
-                <label for="checkbox2">pick2</label>
-                <input type="checkbox" name="checkbox2" value="2">
-                <label for="checkbox3">pick3</label>
-                <input type="checkbox" name="checkbox3" value="3">
+                    <label for="checkbox1">Vodka</label>
+                    <input type="checkbox" name="checkbox1" value="1">
 
+                    <label for="checkbox2">Whiskey</label>
+                    <input type="checkbox" name="checkbox2" value="2">
 
-                <textarea name="textarea" cols="30" rows="5"></textarea>
+                    <label for="checkbox3">Rom</label>
+                    <input type="checkbox" name="checkbox3" value="3">
 
-                <input type="submit" value="Submit">
+                    <label for="checkbox4">Water</label>
+                    <input type="checkbox" name="checkbox4" value="4">
+
+                    <label for="checkbox5">Anything except water</label>
+                    <input type="checkbox" name="checkbox5" value="5">
+                </div>
+
+                <div class="block">
+                    <p>Do you have something else to tell us? Write it down and we'll read it:</p>
+                    <textarea name="textarea" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="block">
+                    <input type="submit" value="Submit" id="btn">
+                </div>
             </form>
         </article>
     </body>
